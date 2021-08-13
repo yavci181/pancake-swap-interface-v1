@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Text, ButtonMenu, ButtonMenuItem, Button, HelpIcon, Link } from '@pancakeswap-libs/uikit'
+import { Button, HelpIcon, Link } from '@pancakeswap-libs/uikit'
 
 const Wrapper = styled.div`
   position: fixed;
@@ -18,6 +18,21 @@ const Wrapper = styled.div`
   }
 `
 
-const VersionBar = () => {}
+const VersionBar = () => {
+  return (
+    <Wrapper>
+      <Button
+        variant="subtle"
+        as={Link}
+        href="https://github.com/yavci181/pancake-swap-interface-v1"
+        endIcon={<HelpIcon color="white" />}
+        scale="sm"
+        ml="16px"
+      >
+        Github
+      </Button>
+    </Wrapper>
+  )
+}
 
 export default VersionBar
