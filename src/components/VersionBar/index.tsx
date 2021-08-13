@@ -20,7 +20,22 @@ const Wrapper = styled.div`
 
 const VersionBar = () => {
   return (
-
+ <Wrapper>
+      <Text bold mr="16px">
+        Source:
+      </Text>
+      <Button
+        variant="subtle"
+        as={Link}
+        href="https://github.com/yavci181/pancake-swap-interface-v1"
+        endIcon={<InfoIcon color="white" />}
+        scale="sm"
+        ml="16px"
+        target="_blank"
+      >
+        Github
+      </Button>
+    </Wrapper>
   )
 }
 
